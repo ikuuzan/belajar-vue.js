@@ -1,7 +1,7 @@
 <script setup>
 
 import { Header, Footer } from '@/components';
-import { ProductSection, FeatureSection, PricingSection } from './home';
+import { ProductSection, FeatureSection, PricingSection, CompanySection } from './home';
 </script>
 
 <template>
@@ -12,6 +12,8 @@ import { ProductSection, FeatureSection, PricingSection } from './home';
   <ProductSection/>
   <FeatureSection/>
   <PricingSection/>
+  <CompanySection/>
+
   
 </main>
 

@@ -1,0 +1,1 @@
+export {default as Avatar1 } from "@/assets/img/avatar-1.jpeg"
