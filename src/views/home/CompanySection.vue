@@ -13,8 +13,8 @@ const testi = [
 },
 {
     desc: 'A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.',
-    name: 'Tiana Schleifer',
-    job: 'CEO & Founder',
+    name: 'Tiana Schleifer Doppleganger',
+    job: 'Co-Founder',
     image: Avatar1
 }
 ]
@@ -23,7 +23,7 @@ const testi = [
 
 
 <template>
-<section>
+<section id="company">
 
 
     <div class="flex flex-col mx-[25%] m-4">

@@ -15,7 +15,7 @@ defineProps({
            {{ desc }}
         </h1>
 
-        <div class="w-10 h-10 overflow-hidden rounded-full m-4">
+        <div class="w-16 h-16 overflow-hidden rounded-full m-4">
             <img :src="image" alt="avatar">
         </div>
             <h1 class="font-bold ">{{ name }}</h1>
