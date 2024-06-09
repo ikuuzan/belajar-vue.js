@@ -1,7 +1,28 @@
 <script setup lang="js">
-import { Chart, Chevron, Mail, User } from '@/components/icons';
+import { Chart, Chevron, Mail, User } from '@/components/icons'
+import { ButtonPrimary } from '@/components/buttons'
+import { Features } from "@/components"
 
-
+const feature = [
+  {
+  
+  title: "Share team inboxes",
+  desc: "Wheter you have a team of 2 or 200, our shared team inboxes keep everyone",
+  logo: Mail,
+  },
+  {
+  
+  title: "Analytics Dashboard",
+  desc: "Wheter you have a team of 2 or 200, our shared team inboxes keep everyone",
+  logo: Chart,
+  },
+  {
+  
+  title: "Deliver Instructor",
+  desc: "Wheter you have a team of 2 or 200, our shared team inboxes keep everyone",
+  logo: User,
+  }
+]
 
 </script>
 
@@ -17,8 +38,10 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
 </div>
 
 
-<div class="flex justify-center items-center "> 
-<div class="flex items-center m-auto justify-center w-20 h-16 bg-blue-800 text-white text-xl font-bold rounded-full">1</div>
+<div class="flex justify-center items-center"> 
+
+
+  <div class="flex items-center p-6 m-auto justify-center w-6 h-6 bg-blue-800 text-white text-xl font-bold rounded-full">1</div>
 <div class="justify-center p-1 m-1 text-wrap">
   <h1 class="font-bold">Create your Account</h1>
   <h1 class="justify-center ">Lorem ipsum dolor sit amet consectetur
@@ -27,7 +50,7 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
 
 <Chevron class="text-black  justify-center items-center w-40 h-40 m-auto"/> 
 
-<div class="flex items-center m-auto justify-center w-20 h-16 border-2 text-black text-xl font-bold rounded-full">2</div>
+<div class="flex items-center p-6 m-auto justify-center w-6 h-6 border-2 text-black text-xl font-bold rounded-full">2</div>
 <div class="justify-center items-center p-1 m-1 text-wrap">
   <h1 class="font-bold">Setup your account</h1>
   <h1 class="justify-center">Lorem ipsum dolor sit amet consectetur
@@ -36,7 +59,7 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
 
 <Chevron class="text-black  justify-center items-center w-40 h-40 m-auto"/> 
 
-<div class="flex items-center m-auto justify-center w-20 h-16 border-2 text-black text-xl font-bold rounded-full">3</div>
+<div class="flex items-center p-6 m-auto justify-center w-6 h-6 border-2 text-black text-xl font-bold rounded-full">3</div>
 <div class="justify-center items-center p-1 m-1 text-wrap">
   <h1 class="font-bold">Start creating with Horizon</h1>
   <h1 class="justify-center">Lorem ipsum dolor sit amet consectetur
@@ -47,9 +70,10 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
 
 </section>
 
-<section class="py-40">
+<section class="py-40 container m-auto flex w-full ">
 
-<div class="container m-auto flex w-full ">
+<!-- <div class="container m-auto flex w-full ">
+ 
   <div class="py-4">
     <div class="rounded-md">
       <div class="bg-blue-700 flex w-24 h-24 m-auto rounded-lg">
@@ -57,9 +81,17 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
       </div>
         <h1 class="font-bold text-2xl text-center my-2">Share team inboxes</h1>
       <h2 class="text-wrap text-center ">Wheter you have a team of 2 or 200, our shared team inboxes keep everyone</h2>
-    </div>
-  </div>
+      </div>
+  </div> -->
   
+<Features
+  v-for="fitur in feature"
+  
+  :title="fitur.title"
+  :desc="fitur.desc"
+  :logo="fitur.logo"
+  />
+<!-- 
   <div class="py-4 ">
     <div class="shadow-2xl shadow-gray-500 rounded-xl">
       <div class="bg-blue-700 flex w-24 h-24 m-auto rounded-lg">
@@ -80,7 +112,7 @@ import { Chart, Chevron, Mail, User } from '@/components/icons';
     </div>
   </div>
 
-</div>
+</div> -->
 </section>
 
 </template>

@@ -23,7 +23,7 @@ const testi = [
 
 
 <template>
-<section id="company">
+<section id="company" class="pt-20">
 
 
     <div class="flex flex-col mx-[25%] m-4">

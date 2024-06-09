@@ -1,1 +1,5 @@
 export {default as Avatar1 } from "@/assets/img/avatar-1.jpeg"
+export {default as ImgIcon } from "@/assets/img/icon.svg"
+export {default as Banner} from "@/assets/img/banner.png"
+export {default as ImgLogo} from "@/assets/img/logo.svg"
+export {default as Thunder} from "@/assets/img/thunder.svg"

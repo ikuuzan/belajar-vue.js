@@ -22,6 +22,10 @@ defineProps({
     <Phone class="inline w-6 h-6 mr-3"/>
     {{ text }}
 </button>
+<button v-else-if="type == 'bulat'" class="w-6 h-6 p-4 items-center  font-bold bg-white border-2 text-blue-800 hover:bg-blue-800 hover:text-white rounded-full  ">
+    
+    {{ text }}
+</button>
 
 
 

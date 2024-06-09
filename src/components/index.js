@@ -1,3 +1,5 @@
 export { default as Header } from "@/components/Header.vue"
 export { default as Footer } from "@/components/Footer.vue"
 export {default as Testimoni } from "@/components/Testimoni.vue"
+export {default as Features } from "@/components/Features.vue"
+export {default as Price } from "@/components/Price.vue"

@@ -10,7 +10,7 @@ defineProps({
 
 <template>
 
-<article class=" bg-gray-200 p-8 flex flex-col mx-16 justify-center items-center text-wrap rounded-2xl">
+<article class=" bg-gray-200 p-8 flex flex-col mx-16 my-8 justify-center items-center text-wrap rounded-2xl">
         <h1 class="text-wrap text-blue-950 text-center mb-4 font-bold leading-8">
            {{ desc }}
         </h1>
